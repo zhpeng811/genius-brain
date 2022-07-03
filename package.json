@@ -1,10 +1,10 @@
 {
-  "name": "react-boilerplate",
-  "version": "4.0.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "name": "genius-brain",
+  "version": "0.0.1",
+  "description": "To be Added",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "https://github.com/zhpeng811/genius-brain.git"
   },
   "engines": {
     "npm": ">=5",
@@ -42,7 +42,9 @@
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "prettify": "prettier --write"
+    "prettify": "prettier --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
